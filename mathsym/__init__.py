@@ -1,0 +1,1 @@
+# This file makes the 'mathsym' directory a Python package. 

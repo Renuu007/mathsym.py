@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathsym"
+version = "0.1.0"
+description = "A library to enable math symbols in Python via a custom runner."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.scripts]
+# This creates the 'mathsym' command and points it to our main function.
+mathsym = "mathsym.cli:main" 
