@@ -1,37 +1,33 @@
-# `mathsym` To-Do List
+# `mathsym` Current To-Do List
 
-This is the task list for the initial development phase of `mathsym`.
+This document tracks the active development tasks for the project. The original to-do list for Phase 1 is complete. This new list focuses on the goals for Phase 2 and 4.
 
-## Phase 1: Core Runner and Transpiler
+## Phase 2: Advanced Symbol Mapping & Features
 
-- [ ] **Task 1**: Initialize the project structure.
-  - [ ] Create the main `mathsym/` directory.
-  - [ ] Create an empty `mathsym/__init__.py`.
+- [ ] **Task 1: Expand Symbol Library**
+  - [ ] Review `AlgebraSymbols.py` and add more common symbols.
+  - [ ] Review `Calculus_AnalysisSymbols.py` and add more common symbols.
+  - [ ] Review `GeometrySymbols.py` and add more common symbols.
+  - [ ] Review `LogicSymbols.py` and add more common symbols.
 
-- [ ] **Task 2**: Create the `pyproject.toml` file.
-  - [ ] Define project metadata (`name`, `version`).
-  - [ ] Add the `[project.scripts]` section to define the `mathsym` command.
+- [ ] **Task 2: Research Advanced Transpiling Cases**
+  - [ ] Research potential edge cases where the tokenizer might need more context (e.g., distinguishing a minus sign from a negative number).
+  - [ ] Create new test cases that would fail if the context is wrong.
 
-- [ ] **Task 3**: Create the symbol mapping file.
-  - [ ] Create `mathsym/symbols.py`.
-  - [ ] Add a dictionary with a few initial symbols: `π`, `√`, `²`, `³`.
+- [ ] **Task 3: Implement Configuration File Support**
+  - [ ] Design a format for a user configuration file (e.g., `mathsym.toml` or `.mathsymrc`).
+  - [ ] Implement logic to find and load this file to allow users to add their own custom symbol mappings.
 
-- [ ] **Task 4**: Implement the core transpiler logic.
-  - [ ] Create `mathsym/transpiler.py`.
-  - [ ] Write a `transpile_source` function that uses Python's `tokenize` module to replace symbols from the map.
+## Phase 4: Packaging and Documentation
 
-- [ ] **Task 5**: Implement the CLI runner.
-  - [ ] Create `mathsym/cli.py` with a `main` function.
-  - [ ] The `main` function should read a file path, call the transpiler, and execute the result with `exec()`.
+- [ ] **Task 1: Expand Test Suite Coverage**
+  - [ ] Create a dedicated test file for each symbol category (e.g., `test_algebra_symbols.py`, `test_set_theory_symbols.py`).
+  - [ ] Write a test to ensure every single symbol in the `MASTER_SYMBOL_MAP` is correctly transpiled.
 
-- [ ] **Task 6**: Implement the module runner entry point.
-  - [ ] Create `mathsym/__main__.py`.
-  - [ ] It should import `main` from `cli.py` and call it.
+- [ ] **Task 2: Finalize Documentation**
+  - [ ] Create a script to auto-generate a table of all supported symbols for `docs/symbols.md` to ensure it's always up to date.
+  - [ ] Review all documentation for clarity and completeness.
 
-- [ ] **Task 7**: Create a test case.
-  - [ ] Create an `examples/` directory.
-  - [ ] Create `examples/demo.py` with some math symbols to test the runner.
-
-- [ ] **Task 8**: End-to-End Test.
-  - [ ] Run `python -m mathsym examples/demo.py` from the root and verify the output.
-  - [ ] Perform a local install (`pip install .`) and test the `mathsym examples/demo.py` command. 
+- [ ] **Task 3: Prepare for PyPI Release**
+  - [ ] Add classifiers, author information, and other necessary metadata to `pyproject.toml`.
+  - [ ] Ensure the `LICENSE` and `README.md` are finalized. 
