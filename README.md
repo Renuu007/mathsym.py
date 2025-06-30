@@ -44,6 +44,8 @@ import mathsym
 c = √(a² + b²)
 ```
 
+For a full list of currently supported symbols, see the [**Symbol Reference**](docs/symbols.md).
+
 ---
 
 ## 📦 Installation
