@@ -1,4 +1,15 @@
-# `mathsym` 🐍✨
+<div align="center">
+  🚩🧡🕉️ || जय श्री राम || 🕉️🧡🚩
+</div>
+
+---
+<div align="center">
+  <h1 style="border-bottom: none;">
+    mathsym 🐍✨
+  </h1>
+</div>
+
+
 
 [![PyPI version](https://badge.fury.io/py/mathsym.svg)](https://badge.fury.io/py/mathsym)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
