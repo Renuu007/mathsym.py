@@ -1,9 +1,4 @@
 <div align="center">
-  🚩🧡🕉️ || जय श्री राम || 🕉️🧡🚩
-</div>
-
----
-<div align="center">
   <h1 style="border-bottom: none;">
     mathsym 🐍✨
   </h1>
